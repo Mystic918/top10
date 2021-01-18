@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "uni-app",
+  "usingComponents": {
+    "van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index",
+    "custom-nav": "/components/custom-nav/custom-nav",
+    "custom-list": "/components/custom-list/custom-list"
+  }
+}
