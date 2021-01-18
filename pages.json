@@ -5,7 +5,7 @@
 			"style": {
 				"navigationBarTitleText": "uni-app",
 				"usingComponents":{
-					 "van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index"
+					 // "van-notice-bar": "/wxcomponents/vant/dist/notice-bar/index"
 				}
 			}
 		}

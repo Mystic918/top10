@@ -4,26 +4,27 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false,
-    "es6": true
+    "urlCheck": false
   },
   "compileType": "miniprogram",
   "libVersion": "",
   "appid": "touristappid",
   "projectname": "Top10Hot",
-  "simulatorType": "wechat",
-  "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
+      "current": -1,
       "list": []
     },
     "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
+      "current": -1,
       "list": []
     },
     "miniprogram": {
+      "current": -1,
       "list": []
     }
   }

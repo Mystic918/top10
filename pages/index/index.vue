@@ -1,18 +1,22 @@
 <template>
 	<view class="index">
+		<!-- #ifdef MP-WEIXIN -->
+		<customNav
+		mode="logo"
+		logoImg="../../static/images/mainlogo.png"
+		bgcolor="#fff"
+		title="测试"
+		:scrollTop="scrollTop"
+		/> 
+		<!-- #endif -->
+		 <!-- #ifdef H5 -->
 		 <customNav
-		 mode="logo"
-		 logoImg="../../static/images/mainlogo.png"
-		 bgcolor="#fff"
+		 mode="normal"
+		 bgcolor="rgb(212, 61, 55)"
 		 title="测试"
 		 :scrollTop="scrollTop"
-		 
 		 /> 
-		 
-		 <van-notice-bar
-		   left-icon="volume-o"
-		   text="在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。"
-		 />
+		 <!-- #endif -->
 		 
 		 <view class="index-list">
 		 	<customList/>
