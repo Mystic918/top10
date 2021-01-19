@@ -6,7 +6,8 @@
     "pages/message/message",
     "pages/me/me",
     "pages/others/others",
-    "components/custom-list/custom-list"
+    "components/custom-list/custom-list",
+    "components/custom-notice/custom-notice"
   ],
   "subPackages": [],
   "window": {

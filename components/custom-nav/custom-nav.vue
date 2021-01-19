@@ -45,8 +45,7 @@
 				default:''
 			},
 			scrollTop:{
-				type: Number,
-				default: 0
+				type: Number
 			},
 			    title:{
 			      type:String,
@@ -129,7 +128,7 @@
 				//#endif
 				},
 				getTool(index){
-					// this.$emit("gteTool",index)
+					  this.$emit("getTool",index)
 				}
 		},
 		mounted() {
@@ -138,7 +137,7 @@
 			//#ifdef H5
 			window.onscroll = function() { 
 			  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-			  if(scrollTop >= 1){
+			  if(scrollTop > 1){
 				  that.isScroll = true
 			  }else{
 				  that.isScroll = false
@@ -151,7 +150,7 @@
 			scrollTop(newValue, oldValue){
 				//#ifdef MP-WEIXIN
 				const that = this
-				if(newValue >= 1){
+				if(newValue > 1){
 					that.isScroll = true
 				}else{
 					that.isScroll = false

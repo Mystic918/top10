@@ -17,9 +17,197 @@
 		 :scrollTop="scrollTop"
 		 /> 
 		 <!-- #endif -->
-		 
+		 <customNotice/>
 		 <view class="index-list">
-		 	<customList/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="material"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="materialBtn"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
+		 	<customList
+				mode="materialBtnMore"
+				title="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+				time = "现在"
+				source = "本地"
+				:imgUrl = imgUrl
+				@clickTool = "getTool"
+				url= '/pages/classes/classes'
+			/>
 		 </view>
 		 
 	</view>
@@ -28,21 +216,24 @@
 <script>
 	import customNav from "../../components/custom-nav/custom-nav.vue"
 	import customList from "../../components/custom-list/custom-list.vue"
+	import customNotice from "../../components/custom-notice/custom-notice.vue"
 	export default {
 		components:{
-			customNav,customList
+			customNav,customList,customNotice
 		},
 		data() {
 			return {
 				title: 'Hello',
-				scrollTop:0
+				scrollTop:0,
+				imgUrl: ["/static/logo.png","/static/logo.png","/static/logo.png"]
 			}
 		},
 		onLoad() {
-
 		},
 		methods: {
-
+          getTool(index){
+			  console.log(index)
+		  }
 		},
 		onPageScroll(e){
 			this.scrollTop = e.scrollTop

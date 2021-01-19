@@ -12,7 +12,6 @@
 </script>
 
 <style>
-	@import "static/css/iconfont.css";
-	@import "static/css/custom-main.css";
+	@import "static/css/iconfont.css"; 
 	/*每个页面公共css */
 </style>

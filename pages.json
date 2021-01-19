@@ -33,6 +33,10 @@
             "path" : "components/custom-list/custom-list",
             "style" : {}
         }
+        ,{
+            "path" : "components/custom-notice/custom-notice",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
