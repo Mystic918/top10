@@ -7,7 +7,8 @@
     "pages/me/me",
     "pages/others/others",
     "components/custom-list/custom-list",
-    "components/custom-notice/custom-notice"
+    "components/custom-notice/custom-notice",
+    "pages/content/content"
   ],
   "subPackages": [],
   "window": {
@@ -54,5 +55,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap95.json"
 }

@@ -37,6 +37,10 @@
             "path" : "components/custom-notice/custom-notice",
             "style" : {}
         }
+        ,{
+            "path" : "pages/content/content",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

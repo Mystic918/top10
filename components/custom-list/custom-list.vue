@@ -262,8 +262,8 @@
 	@import url("./iconfont.css");
 
 	.custom-list-item {
-		padding: 10px 8px;
-		border-bottom: 1px solid #f5f7f9;
+		padding: 20upx 16upx;
+		border-bottom: 1px solid #cfcfcf;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -300,7 +300,7 @@
 		font-size: 32upx;
 	}
 	.custom-list-item .custom-list-title-limit{
-		width: 570upx;
+		width: 500upx;
 		}
 
 	.custom-list-item-main {
@@ -310,12 +310,12 @@
 	}
 
 	.custom-list-detail {
-		font-size: 24upx;
+		font-size: 26upx;
 		color: #b4b4b4;
 		margin-top: 5px;
 	}
 	.custom-list-item-img {
-		width: 234upx;
+		width: 218upx;
 		height: 146upx;
 		text-align: center;
 	}
@@ -324,7 +324,7 @@
 		height: 146upx;
 		text-align: center;
 		padding-bottom: 15px;
-		border-bottom: 1px solid #f5f7f9;
+		border-bottom: 1px solid #cfcfcf;
 		}
 .custom-list-item-img-arr-item{
 	    margin-right: 5upx ;
@@ -356,10 +356,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		line-height: 63upx;
-		border-bottom: 1px solid #f5f7f9;
+		line-height: 80upx;
+		border-bottom: 1px solid #cfcfcf;
 		color: #999999;
-		font-size: 26upx;
+		font-size: 24upx;
 	}
 
 	.custom-list-btn-detai view {
@@ -380,7 +380,7 @@
 		width: 1px;
 		position: absolute;
 		height: 100%;
-		background-color: #f5f7f9;
+		background-color: #cfcfcf;
 		right: 0;
 	}
 </style>

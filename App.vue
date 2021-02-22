@@ -1,6 +1,12 @@
 <script>
-	export default {
+	export default {  
+        globalData: {  
+            userInfo:{
+				token: ''
+			}  
+        },
 		onLaunch: function() { 
+		 
 		},
 		onShow: function() {
 			console.log('App Show')

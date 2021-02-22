@@ -1,0 +1,1 @@
+<view class="custom-load"><view hidden="{{!(type==='loading')}}" class="iconfont iconload-a custom-icon"></view><view hidden="{{!(type==='loaded')}}" class="custom-load-text">{{''+label+''}}</view></view>

@@ -81,6 +81,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  var m0 = parseInt(_vm.slotheight)
+  _vm.$mp.data = Object.assign(
+    {},
+    {
+      $root: {
+        m0: m0
+      }
+    }
+  )
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -153,6 +162,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   props: {
@@ -177,7 +210,23 @@ var _default =
 
     color: {
       type: String,
-      default: '#fff' } },
+      default: '#fff' },
+
+    slotheight: {
+      type: String,
+      default: '0' },
+
+    toolDividing: {
+      type: String,
+      default: 'rgba(125,125,125,.8)' },
+
+    toolBgColor: {
+      type: String,
+      default: 'rgba(125,125,125,.8)' },
+
+    toolcolor: {
+      type: String,
+      default: 'rgba(125,125,125,.8)' } },
 
 
   data: function data() {
@@ -306,7 +355,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 33:
+/***/ 40:
 /*!****************************************************************************************************!*\
   !*** C:/Users/admin/Desktop/demo/Top10Hot/main.js?{"page":"components%2Fcustom-nav%2Fcustom-nav"} ***!
   \****************************************************************************************************/
@@ -322,5 +371,5 @@ createPage(_customNav.default);
 
 /***/ })
 
-},[[33,"common/runtime","common/vendor"]]]);
+},[[40,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/custom-nav/custom-nav.js.map
