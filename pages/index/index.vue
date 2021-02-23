@@ -93,12 +93,13 @@
 				 console.log(that.page , res.page)
 				 if(that.page > res.page){
 					 that.loadstatus = 'loaded'
-				 }else if(that.page = res.page){
+				 }else if(that.page == res.page){
 					  that.list = that.list.concat(res.data)
 					 that.loadstatus = 'loaded'
 				 }else if(that.page < res.page){
 					  that.list = that.list.concat(res.data)
 				 }
+				 that.page++ 
 			})
 		  },
           getTool(index){
@@ -116,8 +117,8 @@
 				info.boundingClientRect(function(data) { //data - 各种参数 
 				console.log(sysInfo.windowHeight,e.scrollTop,data.height)
 					  if(e.scrollTop > 0){
-						  if(sysInfo.windowHeight + e.scrollTop <= data.height){
-							  that.page = that.page + 1
+						  if(sysInfo.windowHeight + e.scrollTop >= data.height){
+							  console.log(1)
 							  that.getDocList()
 						  }else{
 							  that.loadstatus = 'loaded' 
