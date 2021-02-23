@@ -428,7 +428,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 65:
+/***/ 67:
 /*!******************************************************************************************************!*\
   !*** C:/Users/admin/Desktop/demo/Top10Hot/main.js?{"page":"components%2Fcustom-list%2Fcustom-list"} ***!
   \******************************************************************************************************/
@@ -444,5 +444,5 @@ createPage(_customList.default);
 
 /***/ })
 
-},[[65,"common/runtime","common/vendor"]]]);
+},[[67,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/custom-list/custom-list.js.map

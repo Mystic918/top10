@@ -355,7 +355,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 40:
+/***/ 42:
 /*!****************************************************************************************************!*\
   !*** C:/Users/admin/Desktop/demo/Top10Hot/main.js?{"page":"components%2Fcustom-nav%2Fcustom-nav"} ***!
   \****************************************************************************************************/
@@ -371,5 +371,5 @@ createPage(_customNav.default);
 
 /***/ })
 
-},[[40,"common/runtime","common/vendor"]]]);
+},[[42,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/custom-nav/custom-nav.js.map

@@ -243,7 +243,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 66:
+/***/ 68:
 /*!**********************************************************************************************************!*\
   !*** C:/Users/admin/Desktop/demo/Top10Hot/main.js?{"page":"components%2Fcustom-notice%2Fcustom-notice"} ***!
   \**********************************************************************************************************/
@@ -259,5 +259,5 @@ createPage(_customNotice.default);
 
 /***/ })
 
-},[[66,"common/runtime","common/vendor"]]]);
+},[[68,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../.sourcemap/mp-weixin/components/custom-notice/custom-notice.js.map

@@ -41,17 +41,17 @@
 				:title="item.title"
 				:time = "item.create_time"
 				:source = "item.author"
-				:imgUrl = "item.pic"
+				:imgUrl =  "[ApiRootUrl+'/'+item.pic]"
 				@clickTool = "getTool"
 				<!-- #ifdef H5 -->
-				url= '#/pages/content/content'
+				:url= "'#/pages/content/content?doc_id='+ item.doc_id"
 				<!-- #endif -->
 				<!-- #ifdef MP-WEIXIN -->
-				url= '/pages/content/content'
+				:url= "'/pages/content/content?doc_id='+ item.doc_id"
 				<!-- #endif -->
 				:target = target
 			/> 
-			<customLoad :type="loadstatus"/>
+			<customLoad :type="loadstatus" :label="label"/>
 		 </view>
 		 
 	</view>
@@ -63,12 +63,14 @@
 	import customNotice from "../../components/custom-notice/custom-notice.vue"
 	import customLoad from "../../components/custom-load/custom-load.vue"
 	import { request } from "../../util/request.js"
+	import * as config from "../../config/index.js"
 	export default {
 		components:{
 			customNav,customList,customNotice,customLoad
 		},
 		data() {
 			return {
+				label:'',
 				timer:'',
 				loadstatus:'loading',
 				page:1,
@@ -76,33 +78,53 @@
 				target: ['_self','navigateTo'],
 				title: 'Hello',
 				scrollTop:0,
-				imgUrl: ["/static/logo.png","/static/logo.png","/static/logo.png"],
-				list:[]
+				list:[],
+				ApiRootUrl:'' 
 			}
 		},
 		mounted() {
-			const that = this
-			 request('https://wuzehao.store/api/public/getDocument',{page:that.page,number:that.number}).then(res=>{
-				 if(that.page > res.page){
-					 that.loadstatus = 'loaded'
-				 }else{
-				   that.list = res.data
-				 }
-			})
+			this.ApiRootUrl = config.Api.rootUrl
+			this.getDocList()
 		},
 		methods: {
+		  getDocList(){
+			const that = this
+			 request(config.Api.ApiRoot + '/public/getDocument',{page:that.page,number:that.number}).then(res=>{
+				 console.log(that.page , res.page)
+				 if(that.page > res.page){
+					 that.loadstatus = 'loaded'
+				 }else if(that.page = res.page){
+					  that.list = that.list.concat(res.data)
+					 that.loadstatus = 'loaded'
+				 }else if(that.page < res.page){
+					  that.list = that.list.concat(res.data)
+				 }
+			})
+		  },
           getTool(index){
 			  console.log(index)
 		  }
 		},
 		onPageScroll(e){
+			const that = this
 			clearTimeout(this.timer);
 			this.scrollTop = e.scrollTop
 			// 防抖节流
 			this.timer = setTimeout(function(){
-				uni.getSystemInfoSync(rs=>{
-					console.log(rs)
-				})
+				let sysInfo = uni.getSystemInfoSync()
+				let info = uni.createSelectorQuery().select(".index");
+				info.boundingClientRect(function(data) { //data - 各种参数 
+				console.log(sysInfo.windowHeight,e.scrollTop,data.height)
+					  if(e.scrollTop > 0){
+						  if(sysInfo.windowHeight + e.scrollTop <= data.height){
+							  that.page = that.page + 1
+							  that.getDocList()
+						  }else{
+							  that.loadstatus = 'loaded' 
+							  that.label = '已加载完'
+						  }
+					  }
+				}).exec()
 			},300)
 		}
 	}
