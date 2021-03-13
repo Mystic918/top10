@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "custom-nav": "/components/custom-nav/custom-nav",
+    "custom-list": "/components/custom-list/custom-list",
+    "custom-load": "/components/custom-load/custom-load"
+  }
+}

@@ -1,1 +1,1 @@
-<view></view>
+<view><custom-nav vue-id="01451540-1" mode="logo" logoImg="../../static/images/mainlogo.png" bgcolor="#fff" bind:__l="__l"></custom-nav><scroll-view class="index-list" style="{{('height:calc(100vh - env(safe-area-inset-bottom) - '+StatusHeight+'px)'+';')}}" scroll-y="{{true}}" data-event-opts="{{[['scroll',[['asideScroll',['$event']]]]]}}" bindscroll="__e"></scroll-view></view>

@@ -2,17 +2,10 @@
 	<view class="custom-notice"  :style="{'background-color': bgColor,'color':color}">
 		<view class="custom-notice-icon iconfont icon-broadcast">
 		</view>
-		<view class="custom-notice-broadcast">
-			<!-- #ifdef MP-WEIXIN -->
-			<view class="custom-notice-content" :animation="animationData"  @transitionend = "endAnimation">
+		<view class="custom-notice-broadcast"> 
+			<view class="custom-notice-content" :style="'left:'+offsetLeft+'px'">
 			{{title}}
-			</view>
-			<!-- #endif -->
-			<!-- #ifdef H5 -->
-			<view class="custom-notice-content">
-			{{title}}
-			</view>
-			<!-- #endif -->
+			</view> 
 		</view>
 	</view>
 </template>
@@ -33,66 +26,68 @@
 				default: ''
 			},
 			speed:{
-				type: Number,
+				type: String,
 				required: true
 			}
 		},
 		data() {
 			return {
-				 animationData: {}
+				 intervalStatus: null, //动画状态
+				 interval: 20, //时间间隔
+				 childWidth: 0, //字体宽度
+				 offsetLeft: 0, //偏移量
+				 parentWidth: 0 //容器大小
 			}
 		},
-		methods: {
-			endAnimation(){
+		methods: { 
+			quertViewWidth(viewId){
+				return new Promise(resolve=>{
+					let query = uni.createSelectorQuery(),
+					that = this;
+					query.in(that).select(viewId).boundingClientRect(rect=>{
+						resolve(rect.width)
+					}).exec()
+				})
+			},
+			async startMarquee(){
+				let that = this
+				// 清除状态
+				that.stopMarquee()
+				//初始化数据
+				that.parentWidth = await that.quertViewWidth('.custom-notice-broadcast')
+				that.childWidth = await that.quertViewWidth('.custom-notice-content')
+				that.excuseAnimation();
+			},
+			excuseAnimation(){
+					const that = this
+					//文本长度是否 超过 容器大小
+					if(that.childWidth > that.parentWidth){
+						that.intervalStatus = setInterval(function(){
+							if(that.offsetLeft <= 0){
+								if(that.offsetLeft >= -that.childWidth){
+									that.offsetLeft = that.offsetLeft - that.speed
+								}else{
+									that.offsetLeft = that.parentWidth
+								}
+							}else{
+								that.offsetLeft = that.offsetLeft - that.speed
+							}
+						},that.interval)
+					}
+						
+			},
+			stopMarquee(){
 				const that = this
-				 that.animation.translateX(0).step({
-				 	duration: 0,
-				 	timingFunction: 'linear'
-				 })
-				 that.animationData = that.animation.export()
-			}
+				if(that.intervalStatus){
+					clearInterval(that.intervalStatus)
+				}
+			},
+			
 		},
 		mounted(){
-			let time = this.speed , that = this
-			//#ifdef H5
-			const documentbody = document.documentElement || document.body
-			const cNc = document.getElementsByClassName('custom-notice-content')[0]
-			const width = cNc.clientWidth
-			cNc.style.animation = "swipers "+time+"s linear infinite" 
-			var style = document.styleSheets[0];
-			style.insertRule("@keyframes swipers{from{left:"+documentbody.clientWidth+"px}to{left: -"+width+"px;}}")
-			 //#endif
-			 //#ifdef MP-WEIXIN 
-			 
-			uni.createSelectorQuery().in(this).select('.custom-notice-content').boundingClientRect(data => { 
-				uni.createSelectorQuery().in(this).select('.custom-notice-broadcast').boundingClientRect(data2 =>{
-					 
-			  let animation  = uni.createAnimation()
-			  that.animation = animation
-			  
-			that.animation.translateX(0-data.width).step({
-								duration:  time * 1000,
-								timingFunction: 'linear'
-						 }) 
-			that.animationData = that.animation.export()
-		  setInterval(function(){
-			that.animation.translateX(0-data.width).step({
-								duration:  time * 1000,
-								timingFunction: 'linear'
-						 }) 
-			that.animationData = that.animation.export()
-		  }, 0)
-
-			 		
-		 }).exec();
-}).exec(); 
-
- 
-
-
-
-			 //#endif
-			 
+			//初始化数据
+			const that = this
+			 that.startMarquee()
 		}
 	}
 </script>

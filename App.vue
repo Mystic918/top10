@@ -1,10 +1,5 @@
 <script>
 	export default {  
-        globalData: {  
-            userInfo:{
-				token: ''
-			}  
-        },
 		onLaunch: function() { 
 		 
 		},

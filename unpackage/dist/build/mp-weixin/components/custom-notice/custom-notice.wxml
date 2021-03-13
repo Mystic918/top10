@@ -1,0 +1,1 @@
+<view class="custom-notice data-v-3d37c500" style="{{'background-color:'+(bgColor)+';'+('color:'+(color)+';')}}"><view class="custom-notice-icon iconfont icon-broadcast data-v-3d37c500"></view><view class="custom-notice-broadcast data-v-3d37c500"><view class="custom-notice-content data-v-3d37c500" style="{{('left:'+offsetLeft+'px')}}">{{''+title+''}}</view></view></view>

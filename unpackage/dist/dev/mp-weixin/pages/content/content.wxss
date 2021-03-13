@@ -177,7 +177,12 @@
 
 .content.data-v-49c01bfa{padding: 10px;}
 .content .title.data-v-49c01bfa{font-size: 40rpx;font-weight: bold;}
-.content .details.data-v-49c01bfa{margin-top: 5px;color: #888888;font-size: 22rpx;}
+.content .details.data-v-49c01bfa{margin-top: 5px;color: #888888;font-size: 22rpx;margin-bottom: 10px;}
 .content .details text.data-v-49c01bfa{margin-right: 10px;}
 .content .main.data-v-49c01bfa{}
+.main-txt.data-v-49c01bfa{white-space: pre-line !important;word-break:break-all !important;word-wrap:break-word !important;overflow: hidden;}
+.main-txt ._img.data-v-49c01bfa{width: 100% !important;height: auto;}
+.rich-img.data-v-49c01bfa{width: 100% !important;height: auto;}
+.color-red.data-v-49c01bfa {color: red;}
+.color-grey.data-v-49c01bfa {color: grey;}
 

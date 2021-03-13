@@ -8,7 +8,8 @@
     "pages/others/others",
     "components/custom-list/custom-list",
     "components/custom-notice/custom-notice",
-    "pages/content/content"
+    "pages/content/content",
+    "pages/record/record"
   ],
   "subPackages": [],
   "window": {
@@ -37,7 +38,7 @@
       },
       {
         "pagePath": "pages/others/others",
-        "text": "社区",
+        "text": "放松放松",
         "iconPath": "static/images/others.png",
         "selectedIconPath": "static/images/others-on.png"
       },

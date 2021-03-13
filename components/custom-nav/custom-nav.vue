@@ -143,6 +143,10 @@
 				that.statusBarHeight = statusBarHeight
 				that.menuHeight = menuHeight
 				that.haveBack = haveBack
+				//为全局提供系统内容高度，除去状态栏和头部
+				let sysInfo = uni.getSystemInfoSync()
+				getApp().globalData.StatusHeight = navheight +parseInt(that.slotheight)
+				getApp().globalData.winHeight = sysInfo.windowHeight  -  getApp().globalData.StatusHeight
 			},
 			goback() {
 				//#ifdef H5

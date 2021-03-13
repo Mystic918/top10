@@ -2,7 +2,7 @@ import * as config from '../config/index.js'
 function request(option){
 		let url = arguments[0] || ''
 		let data = arguments[1] || {}
-		let headers = option.headers || {}
+		let method = arguments[2] || 'GET'
 		console.log(config.Api.rootUrl)
 		// headers['content-type'] = 'application/x-www-form-urlencoded'
 		// if(url.indexOf(conifg.authUrl) === 0){
@@ -12,6 +12,7 @@ function request(option){
 			uni.request({
 				url:url,
 				data:data,
+				method:method,
 				success:(res)=>{
 					if(res.data.code === 200){
 					resolve(res.data)

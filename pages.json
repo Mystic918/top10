@@ -41,6 +41,10 @@
             "path" : "pages/content/content",
             "style" : {}
         }
+        ,{
+            "path" : "pages/record/record",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
@@ -68,7 +72,7 @@
 			},
 			{
 				"pagePath":"pages/others/others",
-				"text":"社区",
+				"text":"放松放松",
 				"iconPath":"static/images/others.png",
 				"selectedIconPath":"static/images/others-on.png"
 			},
